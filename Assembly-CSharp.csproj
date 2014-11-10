@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{3B5A291D-AEE0-28F7-E613-3F8F24FDE8B6}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_1;UNITY_4_5;UNITY_STANDALONE_LINUX;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Apex5\Scripts\AI\AIAttackScript.cs" />
+     <Compile Include="Assets\Apex5\Scripts\AI\AIPatrolScript.cs" />
+     <Compile Include="Assets\Apex5\Scripts\AI\AIScript.cs" />
+     <Compile Include="Assets\Apex5\Scripts\AI\Boss\Boss.cs" />
+     <Compile Include="Assets\Apex5\Scripts\AI\Boss\Digger.cs" />
+     <Compile Include="Assets\Apex5\Scripts\AI\Boss\HurtPlayerTrigger.cs" />
+     <Compile Include="Assets\Apex5\Scripts\AI\Boss\King.cs" />
+     <Compile Include="Assets\Apex5\Scripts\AI\Boss\Roller.cs" />
+     <Compile Include="Assets\Apex5\Scripts\AI\Boss\SpinTop.cs" />
+     <Compile Include="Assets\Apex5\Scripts\AI\Boss\Turreter.cs" />
+     <Compile Include="Assets\Apex5\Scripts\AI\WeaponContactScript.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Animation\MecanimCharControl.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Buttons\ChangeDifficulty.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Buttons\LoadOnClick.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Buttons\QuitOnClick.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Buttons\RotateOnClick.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Character\Character.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Character\DeathTest.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Character\Enemy.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Character\LockRotation.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Character\ObservePosition.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Character\ObserveRotation.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Character\Player.cs" />
+     <Compile Include="Assets\Apex5\Scripts\DestroyAfter.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Global\Game.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Global\SoundManager.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Mirrors\MirrorMirrifyObject.cs" />
+     <Compile Include="Assets\Apex5\Scripts\PelletScript.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Room\HealthTrigger.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Room\RoomTrigger.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Room\SpawnTeleportScript.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Room\TriggerSound.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Room\UnlockGunTrigger.cs" />
+     <Compile Include="Assets\Apex5\Scripts\SwitchLevelsTrigger.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Turret\BounceProjectile.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Turret\ProjectileScript.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Turret\ShieldTurret.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Turret\TurretScript.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Weapons\ClipBased.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Weapons\Gun.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Weapons\RoundBased.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Weapons\Useable\Pistol.cs" />
+     <Compile Include="Assets\Apex5\Scripts\Weapons\Useable\Shotgun.cs" />
+     <None Include="Assets\Apex5\Shaders\DepthMask.shader" />
+     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
+     <None Include="Assets\Apex5\Shaders\Skin Shader\SkinDiffuse.shader" />
+     <None Include="Assets\Apex5\Shaders\Glass.shader" />
+     <None Include="Assets\Apex5\Shaders\Particle Alpha Blend.shader" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Apex5\Shaders\Team Fortress 2.shader" />
+     <None Include="Assets\Apex5\Shaders\BillboardTree.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\Apex5\Particles\Foam\foamShader.shader" />
+ <Reference Include="RAINIndie">
+ <HintPath>C:/Users/ApexRUI/Documents/_PROJECT_Unity/ApexPigsMustDie/Assets/RAIN/RAINIndie.dll</HintPath>
+ </Reference>
+ <Reference Include="Recast">
+ <HintPath>C:/Users/ApexRUI/Documents/_PROJECT_Unity/ApexPigsMustDie/Assets/RAIN/Recast.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{5A9859ED-745E-8387-1310-F478520EA59A}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{91CD7CC0-7763-E021-552C-B9059AD3BE21}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
